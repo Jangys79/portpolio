@@ -188,7 +188,8 @@
                       margin-bottom: 10vh;
                       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
                     position: relative;
-                    z-index: 2;}
+                    z-index: 2;
+                    overflow: hidden;}
 .Project_mo .gompyo1{width: 80%; height: 100%;
                     position: absolute;
                     top: 0; right: 0;
@@ -200,6 +201,7 @@
                         transform: translateY(-30%);}
 .Project_mo .gompyo2{position: absolute;
                     bottom: 10%; left: 5%;
+                    overflow: hidden;
                     }
 .Project_mo .gompyo2 h1{font-size: 50px;
                       font-family: "Noto Sans KR", sans-serif;
@@ -218,7 +220,8 @@
 .Project_mo .artcan1{width: 80%; height: 100%;
                     position: absolute;
                     top: 0; right: 0;
-                    background-color: #FCF0F0;}
+                    background-color: #FCF0F0;
+                    overflow: hidden;}
 .Project_mo .artcan1 img{width: 100%;
                         position: absolute;
                         top: 30%; right: 0;
@@ -235,14 +238,15 @@
                       }
 
 .design_tp{display: none;}
-.design{
-    width: 100%;
-    height: 100vh;
-    background-color: #E6E6FA;
-    display: flex;
-    flex-direction: column;
+.Dein{width: 100%;  
+      height: 190vh;
+      margin-bottom: 1%;}
+.design{width: 100%;
+      height: 100%;
+      background-color: #E6E6FA;
+      display: flex;
+      flex-direction: column;
       }
-
 .d_section{z-index: 2;
             width: 100%;
             flex: 1; 
@@ -250,16 +254,16 @@
             flex-direction: column;
             overflow: hidden;
             }
-
 .d_section img{
     width: 100%;
-    height: 30%; 
-    max-height: 30%;
+    height: 25%; 
     object-fit: cover; 
-    margin-bottom: 5%;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer; 
+    margin-bottom: 1%;
       }
+
+      
 .d_section img:hover{scale: 1.12;
       transition: all 1.5s;
       filter: brightness(0.8);
@@ -285,11 +289,11 @@
             position: absolute;
             top: 0; left: 50%;
             transform: translateX(-50%);}
-  
-.viewpic img {
+
+.viewpic img{
       width: 100%;
       border-radius: 8px;}
-  
+
 .view h4{margin: 10px 0;
       font-size: 20px;
       font-family: "Noto Sans KR", sans-serif;
@@ -300,7 +304,7 @@
       font-family: "Noto Sans KR", sans-serif;
       font-weight: 600;}
   
-.viewX {background: #007BFF;
+.viewX{background: #007BFF;
       color: white;
       border: none;
       padding: 10px 15px; 
@@ -308,7 +312,7 @@
       cursor: pointer;
       transition: background 0.3s;
       position: absolute;
-      top: 70%; left: 50%;
+      top: 80%; left: 50%;
       transform: translateX(-50%);}
 .viewX:hover {
       background: #0056b3;
@@ -526,17 +530,15 @@
 .design{display: none;}
 .design_tp{display: block;}
 
-.design_tp{
-    width: 100%;
-    height: 100vh;
-    background-color: #E6E6FA;
-    display: flex;
-    overflow: hidden;
-      }
+.design_tp{width: 100%;
+            height: 100vh;
+            background-color: #E6E6FA;
+            display: flex;
+            overflow: hidden;
+            }
 
 .d_first, .d_second{width: 50%; height: 80%;z-index: 2;
-      margin-right: 1%; margin-left: 1%;}
-
+                        margin-right: 1%; margin-left: 1%;}
 .d_first img:first-child:hover{scale:1.05;
                               transition: all 1.2s;
                               filter: brightness(0.8);
@@ -547,15 +549,16 @@
                               transition: all 1.2s;
                               filter: brightness(0.8);
                               }
-.d_first img{margin-top: 5%;
+.d_first img{width: 100%; height: 50%;
+            margin-top: 5%;
            object-fit:cover;
            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
            border-radius: 10px;
            background-color: rgba(0, 0, 0, 0.2);
            cursor: pointer; 
-
             }
-.d_second img{width: 100%; height: 100%;
+
+.d_second img{width: 100%; height: 50%;
           object-fit: cover; 
           margin-top: 5%;
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -737,29 +740,31 @@
     top: 30% !important; 
     transform: translateY(-20%) !important; 
       }
-
 .swiper-button-prev{
     left: 20px !important;
     top: 30% !important; 
     transform: translateY(-20%) !important;
       }
+      
 .design_tp{flex-direction: column;}
-.d_first, .d_second{width: 60%; height: 80%;
+.d_first, .d_second{width: 60%; height: 60%;
       }
 .d_first{margin-left: 15%; display: flex;}
-.d_second{margin-left: 15%;}
+.d_second{margin-left: 15%; display: flex;}
 
-.d_first img:first-child{width: 60%; height: auto;
+.d_first img:first-child{width: 60%; height: 50%;
                         margin-right: 1%;
                         }
 .d_first img:last-child{width: 60%; height: auto;
                         }
 
-.d_second img{width: 100%; height: 53%;
-          object-fit: cover; 
-          margin-top: 1%;
-            margin-left: 7%;}
-          
+.d_second img{width: 60%; height: 70%;
+            object-fit: cover; 
+            margin-top: 1%;
+            margin-right: 1%;}
+.d_second a img{width: 100%; height: 70%;
+                  object-fit: cover; 
+                  margin-top: 3%;}
 
 .viewWrap{background: #FFFFFF;
             padding: 10px;
